@@ -1,0 +1,9 @@
+body {
+    background-image: url("image/bg.jpg");
+}
+.main {
+    display: flex;
+}
+.content {
+    margin: auto;
+}

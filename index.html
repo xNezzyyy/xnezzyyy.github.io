@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Университет</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css" />
+  <script>
+    function getContact() {
+      document.getElementById('cont').style.display = "block";
+    }
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <!-- nav тег отвечающий за меню -->
+    <nav class="header__nav">
+      <!-- тег a - это ссылка. В данном случае сслыка указывает на главную страницу, атрибут href содержит
+         адрес этой страницы. В качестве элемента, который будет служить ссылкой выбрано изображение - логотип.
+        Если картинку нужно изменить, то меняем ее адрес в атрибуте src -->
+      <a href="./index.html">
+        <img  width="125px" height="125px" class="header__logo2" src="./img/logo2.jpg" alt="Логотип." />
+      </a>
+      <!-- тег div с классом header__links задает блок в котором располагаются ссылки на другие части страницы
+           сайта. В атрибутах href указаны id этих элементов -->
+      <div class="header__links" id="headerLinks">
+        <ul class="header__list">
+          <!-- все ссылки в данном случае являются списком, каждый отдельный элемент которого задается 
+            тегом li. Если нужно добавить еще ссылку в меню, то копируем весь тег li от начала, до закрывающего 
+          тега </li> и вставляем следующим пунктом-->
+          <li class="header__list-elem">
+            <a class="header__link" href="./index.html">Главная</a>
+          </li>
+          <li class="header__list-elem">
+            <a class="header__link" href="#course">Курсы</a>
+          </li>
+          <li class="header__list-elem">
+            <a class="header__link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="header__list-elem">
+            <a class="header__link" href="#about">О нас</a>
+          </li>
+          <li class="header__list-elem">
+            <a class="header__link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <!-- блок меню заканчивается -->
+    </nav>
+
+    <!-- блок div с классом header__text-box содержит главный заголовок на странице: позравление, далее в 
+        теге p содержится текст, который рассказывает о том, что же это за сайт. Пока в этом теге находится 
+        текст-заглушка. Заглушки часто используют на этапе проектирования, пока не знают точное содержание сайта -->
+    <div class="header__text-box">
+      <h1 class="header__title">Школьная жизнь</h1>
+      <!--<p class="header__subtitle">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam nam
+        illo exercitationem aspernatur obcaecati corrupti dolor similique
+        iusto. <br />
+        Minima quam officiis animi similique consequatur cumque fuga nulla
+        ratione maxime distinctio?
+      </p>-->
+      <!--<a class="header__button" href="#course">Подробнее о программах обучения</a>-->
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Тег section говорит о том, что далее идет блок текста с определенной тематикой. В нашем случае это
+    программы подготовки. У этого тега задан атрибут id. Он используется для сслыки на этот блок из меню -->
+    <section class="course" id="course">
+      <h2 class="course__title">Информация о школьных событиях</h2>
+      <p class="course__text">
+       
+      </p>
+
+      <div class="course__container">
+        <!-- В тегах div с классом course__block содержатся блоки, которые описывают программы подготовки.
+        В нашем случае таких программы три: бакалавриат, магистратура, специалитет. Этих блоков может быть 
+        любое количество.-->
+        <div class="course__block">
+          <h3 class="course__block_title">Кино</h3>
+          <p class="course__block_text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+            fugiat soluta doloribus labore ea officiis optio, ratione maxime
+            repellat obcaecati iusto possimus voluptatem et? Voluptas eos
+            molestiae qui aspernatur sed?
+          </p>
+        </div>
+        <div class="course__block">
+          <h3 class="course__block_title">Зоопарк</h3>
+          <p class="course__block_text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+            fugiat soluta doloribus labore ea officiis optio, ratione maxime
+            repellat obcaecati iusto possimus voluptatem et? Voluptas eos
+            molestiae qui aspernatur sed?
+          </p>
+        </div>
+        <div class="course__block">
+          <h3 class="course__block_title">Школьный КВН</h3>
+          <p class="course__block_text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+            fugiat soluta doloribus labore ea officiis optio, ratione maxime
+            repellat obcaecati iusto possimus voluptatem et? Voluptas eos
+            molestiae qui aspernatur sed?
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Тег section с классом campus описывает студенческий городок. В нем находятся карточки с плюсами студенческого
+городка -->
+    <section class="campus">
+      <h2 class="campus__title">Меню в школьной столовой</h2>
+      <p class="campus__text">
+        
+      </p>
+
+      <div class="campus__container">
+        <!-- В тегах div с классом campus__block содержатся блоки, которые описывают плюсы.
+        В плюсов опять три как и программ. Этих блоков может быть любое количество. Достаточно копировать весь блок
+      и можно добавлять еще плюсы-->
+        <div class="campus__block">
+          <!-- Здесь в карточках присутствуют изображения, которые добавлены с помощью тега img. Адрес картинки 
+            указывается в атрибуте src -->
+          <img class="campus__pic" src="./img/Котлета.jpg" alt="" />
+          <!-- Заголовок каждой карточки находится в блоке div с классом campus__blocr-layer. С помощью CSS 
+          этот блок становится виден, только когда пользователь наводит мышь на карточку -->
+          <div class="campus__block-layer">
+            <h3 class="campus__block-title">Вкусные котлеты</h3>
+          </div>
+        </div>
+        <div class="campus__block">
+          <img class="campus__pic" src="./img/Суп.jpeg" alt="" />
+          <div class="campus__block-layer">
+            <h3 class="campus__block-title">Гороховый суп</h3>
+          </div>
+        </div>
+        <div class="campus__block">
+          <img class="campus__pic" src="./img/Компот.png" alt="" />
+          <div class="campus__block-layer">
+            <h3 class="campus__block-title">
+              Компот из сухофруктов
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Секция, которая отвечает за отзывы. Она тоже выполнена в виде карточек. id этой секции позволяет сделать 
+на нее ссылку из главного меню -->
+    <section class="reviews" id="reviews">
+      <h2 class="reviews__title">Информация о датах сдачи ГТО</h2>
+      <p class="reviews__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <div class="reviews__container">
+        <div class="review">
+          <img src="./img/user_1.jpg" alt="Фотография мужчины." class="review__pic" />
+          <div>
+            <p class="review__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
+              dicta est explicabo voluptatem animi, perspiciatis quos eius
+              soluta corporis magnam quaerat, repudiandae pariatur optio
+              expedita numquam fuga dolore eligendi esse.
+            </p>
+            <h3 class="review__name">Владимир</h3>
+            <!-- С помощью тегов i добавлены иконки звездочек в отзывах пользователей. 
+              fa-star это закрашенная звезда, fa-star-o незакрашенная звезда -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+        </div>
+
+        <div class="review">
+          <img src="./img/user_2.jpg" alt="Фотография женщины." class="review__pic" />
+          <div>
+            <p class="review__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
+              dicta est explicabo voluptatem animi, perspiciatis quos eius
+              soluta corporis magnam quaerat, repudiandae pariatur optio
+              expedita numquam fuga dolore eligendi esse.
+            </p>
+            <h3 class="review__name">Екатерина</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contacts">
+      <h2 class="cta__title">Скорее подавайте свои заявки!</h2>
+      <a class="cta__link" onclick="getContact()">Связаться с нами</a>
+      <div class="cta__contact" id="cont">Телефон: 8(888)888-88-88 E-mail: email@email.ru</div>
+    </section>
+  </main>
+
+  <footer class="footer" id="about">
+    <h2 class="footer__title">О нас</h2>
+    <p class="footer__text">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
+      repellendus quo necessitatibus officia nam, velit iste accusantium
+      perspiciatis illum dicta eum est voluptatum sapiente possimus obcaecati
+      aperiam corporis. Ipsa, hic.
+    </p>
+    <div class="footer_icons">
+      <i class="fa fa-vk"></i>
+      <i class="fa fa-twitch"></i>
+      <i class="fa fa-telegram"></i>
+    </div>
+    <!-- Не забудьте поменять создателя страницы-->
+    <p>Создатель страницы: Алина Мальгинова</p>
+    <p>Сделано с <i class="fa fa-heart-o"> </i></p>
+  </footer>
+
+</body>
+
+</html>
